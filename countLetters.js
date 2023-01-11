@@ -19,13 +19,13 @@ const countLetters = function(letters) {
 
 const result = countLetters("lighthouse in the house");
 
-console.log(assertEqual(result['l'], 1));
-console.log(assertEqual(result['i'], 2));
-console.log(assertEqual(result['g'], 1));
-console.log(assertEqual(result['h'], 4));
-console.log(assertEqual(result['t'], 2));
-console.log(assertEqual(result['o'], 2));
-console.log(assertEqual(result['u'], 2));
-console.log(assertEqual(result['s'], 2));
-console.log(assertEqual(result['e'], 3));
-console.log(assertEqual(result['n'], 1));
+assertEqual(result['l'], 1);
+assertEqual(result['i'], 2);
+assertEqual(result['g'], 1);
+assertEqual(result['h'], 4);
+assertEqual(result['t'], 2);
+assertEqual(result['o'], 2);
+assertEqual(result['u'], 2);
+assertEqual(result['s'], 2);
+assertEqual(result['e'], 3);
+assertEqual(result['n'], 1);
