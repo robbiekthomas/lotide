@@ -7,9 +7,9 @@ const assertEqual = function(actual, expected) {
 };
 
 const countLetters = function(letters) {
-  let answer = {};
+  const answer = {};
   for (let letter of letters) {
-    let charCode = letter.charCodeAt(0);
+    const charCode = letter.charCodeAt(0);
     if ((charCode >= 65 && charCode < 91) || (charCode >= 97 && charCode < 123)) {
       answer[letter] ? answer[letter] += 1: answer[letter] = 1;
     }
