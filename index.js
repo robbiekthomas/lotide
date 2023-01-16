@@ -17,9 +17,9 @@ const takeUtil = require("./takeUtil");
 const without = require("./without");
 
 module.exports = {
-  head: head,
-  tail: tail,
-  middle: middle,
+  head,
+  tail,
+  middle,
   assertArraysEqual,
   assertEqual,
   assertObjectsEqual,
