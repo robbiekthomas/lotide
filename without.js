@@ -1,4 +1,4 @@
-const eqArrays = function(array1, array2) {
+const eqArrays = function (array1, array2) {
   if (array1.length !== array2.length) {
     return false;
   }
@@ -10,7 +10,7 @@ const eqArrays = function(array1, array2) {
   return true;
 };
 
-const assertArraysEqual = function(actual, expected) {
+const assertArraysEqual = function (actual, expected) {
   if (eqArrays(actual, expected)) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}✅✅✅ `);
   } else {
@@ -18,19 +18,19 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-const without = function(sourceArray, itemsToRemove) {
+const without = function (sourceArray, itemsToRemove) {
   let filtered = sourceArray;
   for (let item of itemsToRemove) {
-    filtered = filtered.filter(ele => ele !== item);
+    filtered = filtered.filter((ele) => ele !== item);
   }
   return filtered;
 };
 
+module.exports = without;
 
-assertArraysEqual(without([1, 2, 3], [1]), [2,3]);
+assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
 assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
 assertArraysEqual(without([1, 2, 3, 4, 5, 6, 7], [1, 4, 7]), [2, 3, 5, 6]);
-
 
 const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]); // no need to capture return value for this test case

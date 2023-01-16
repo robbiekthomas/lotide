@@ -1,4 +1,4 @@
-const eqArrays = function(array1, array2) {
+const eqArrays = function (array1, array2) {
   if (array1.length !== array2.length) {
     return false;
   }
@@ -10,7 +10,7 @@ const eqArrays = function(array1, array2) {
   return true;
 };
 
-const assertArraysEqual = function(actual, expected) {
+const assertArraysEqual = function (actual, expected) {
   if (eqArrays(actual, expected)) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}✅✅✅ `);
   } else {
@@ -18,18 +18,22 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-
-const letterPositions = function(letters) {
+const letterPositions = function (letters) {
   const answer = {};
-  const lettersArray = letters.split('');
+  const lettersArray = letters.split("");
   for (let [index, letter] of lettersArray.entries()) {
     let charCode = letter.charCodeAt(0);
-    if ((charCode >= 65 && charCode < 91) || (charCode >= 97 && charCode < 123)) {
-      answer[letter] ? answer[letter].push(index) : answer[letter] = [index];
+    if (
+      (charCode >= 65 && charCode < 91) ||
+      (charCode >= 97 && charCode < 123)
+    ) {
+      answer[letter] ? answer[letter].push(index) : (answer[letter] = [index]);
     }
   }
   return answer;
 };
+
+module.exports = letterPositions;
 
 const result = letterPositions("lighthouse in the house");
 
