@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@robbiekt/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "replication of lodash for educational purposes",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/robbiekthomas/lotide.git"
   },
-  "author": "",
+  "author": "Robbie Thomas <robbiekt@gmail.com> (https://robbiethomas.dev/)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/robbiekthomas/lotide/issues"
